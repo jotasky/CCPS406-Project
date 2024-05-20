@@ -1,0 +1,122 @@
+{
+  "i01_torch": {
+    "name": "Torch",
+    "type": "weapon",
+    "health": 0,
+    "damage": 10,
+    "defense": 0,
+    "evasion": 0,
+    "desc": "A torch, useful for lighting up rooms.",
+  }
+  
+  "i02_smallhealthpot": {
+    "name": "Small Health Potion",
+    "type": "health",
+    "health": 25,
+    "damage": 0,
+    "defense": 0,
+    "evasion": 0,
+    "desc": "Using this regenerates your health by 25.","
+  }
+
+  "i03_largehealthpot": {
+    "name": "Large Health Potion",
+    "type": "health",
+    "health": 50,
+    "damage": 0,
+    "defense": 0,
+    "evasion": 0,
+    "desc": "Using this regenerates your health by 50.","
+  }
+    
+  "i04_rustysword": {
+    "name": "Rusty sword",
+    "type": "weapon",
+    "health": 0,
+    "damage": 40,
+    "defense": 0,
+    "evasion": 0,
+    "desc": "A rusty old sword, left here by previous adventurers.",
+  }
+
+  "i05_ironchestplate": {
+    "name": "Iron Chestplate",
+    "type": "armour",
+    "health": 0,
+    "damage": 0,
+    "defense": 20,
+    "evasion": 0,
+    "desc": "Worn out leather armour.",
+  }
+
+  "i06_neymarsshinpads":{
+    "name": "Neymar's Shinpads",
+    "type": "armour",
+    "health": 0,
+    "damage": 0,
+    "defense": 10,
+    "evasion": 3,
+    "desc": "Shinpads worn by Neymar, they increases your chances of evading an attack.",
+  }
+
+  "i07_thorshammer":{
+    "name": "Thor's Hammer",
+    "type": "weapon",
+    "health": 0,
+    "damage": 60,
+    "defense": 0,
+    "evasion": 0,
+    "desc": "A hammer imbued with the powers of the God of Lightning, Thor.",
+  }
+    
+  "i08_voidwyrmscalemail":{
+    "name": "Voidwyrm Scalemail",
+    "type": "armour",
+    "health": 0,
+    "damage": 0,
+    "defense": 50,
+    "evasion": 0,
+    "desc": "Armour made from the scales of a Voidwyrm, a beast residing in the deep Void.",
+  }
+    
+  "i09_killmongersvambraces":{
+    "name": "Killmonger's Vambraces",
+    "type": "armour",
+    "health": 0,
+    "damage": 0,
+    "defense": 15,
+    "evasion": 5,
+    "desc": "Killmonger's vambraces, they increases your chances of evading an attack.",
+  }
+    
+  "i10_edwardskatana": {
+    "name": "Edward's Katana",
+    "type": "weapon",
+    "health": 0,
+    "damage": 80,
+    "defense": 0,
+    "evasion": 0,
+    "desc": "A katana that was left by Edward Kenway, it is a powerful weapon.",
+  }
+
+  "i11_cloakofevasion"{
+    "name": "Cloak of Evasion",
+    "type": "armour",
+    "health": 0,
+    "damage": 0,
+    "defense": 5,
+    "evasion": 4,
+    "desc": "A cloak make of ethereal silk, increases your chances of evading an attack."
+  }
+
+  "i12_cagekey":{
+    "name": "Princess's Cage Key",
+    "type": "misc",
+    "health": 0,
+    "damage": 0,
+    "defense": 0,
+    "evasion": 0,
+    "desc": "The key to unlock the Princess's Cage."
+  }
+    
+}

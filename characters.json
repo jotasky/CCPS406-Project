@@ -1,0 +1,146 @@
+{ 
+  "c1_player"{
+      "name": "Sven",
+      "class": "Hero",
+      "health": 100,
+      "attack": 15,
+      "defense": 15,
+      "evasion": 3,
+      "level": 0
+      "inventory": [],
+      "description": "The hero of Orion.",
+      "curItem": "",
+      "state":{
+        "normal": "..."
+        "enraged": "Thanos is enraged."
+      }
+  }
+  
+  "c2_thanos": {
+    "name": "Thanos",
+    "class": "Enemy",
+    "health": 500,
+    "attack": 100,
+    "defense": 100,
+    "evasion": 15,
+    "level": 15,
+    "inventory": ["i12_cagekey"],
+    "description": "Extra-terrestrial trying to wipe out the population of Orion.",
+    "state":{
+      "normal": "..."
+      "enraged": "Thanos is enraged."
+    }
+  }
+
+  "c3_neymar": {
+    "name": "Neymar",
+    "class": "Enemy",
+    "health": 50,
+    "attack": 5,
+    "defense": 15,
+    "evasion": 8,
+    "level": 1
+    "inventory": ["i02_smallhealthpot", "i06_neymarsshinpads"],
+    "description": "A former footballer who uses his agility and precise footwork to         outmaneuver his opponents",
+    "state":{
+      "normal":"...",
+      "enraged":"Neymar is enraged."
+    }
+  }
+
+  "c4_aang": {
+    "name": "Aang",
+    "type": "Enemy",
+    "health": 70,
+    "attack": 12,
+    "defense": 20,
+    "evasion": 5,
+    "level": 2,
+    "inventory": ["i02_smallhealthpot"],
+    "description": "Once savior of the earth, now corrupted by dark forces",
+    "state":{
+      "normal":"...",
+      "enraged":"Aang is enraged."
+    }
+  }
+
+  "c5_kratos":{
+    "name": "Kratos",
+    "type": "Enemy",
+    "health": 150,
+    "attack": 25,
+    "defense": 30,
+    "evasion": 5,
+    "level": 4,
+    "inventory": ["i02_smallhealthpot"],
+    "description": "The son of Thanos, the god of destruction.",
+    "state":{
+      "normal":"...",
+      "enraged":"Kratos is enraged." //we would make this a way to interact thanos,
+    }
+    
+  }
+
+  "c6_rose":{
+    "name": "Rose",
+    "type": "Enemy",
+    "health": 170,
+    "attack": 35,
+    "defense": 40, 
+    "evasion": 5,
+    "level": 6,
+    "inventory": [],
+    "description": "A wise woman who has been cursed by Thanos.",
+    "state":{
+      "normal":"...",
+      "enraged":"Rose is enraged."
+    }
+  }
+
+  "c7_killmonger":{
+    "name": "Killmonger",
+    "type": "Enemy",
+    "health": 250,
+    "attack": 50,
+    "defense": 50,
+    "evasion": 10,
+    "level": 7,
+    "inventory": ["i08_killmongersvambraces"],
+    "description": "Clad in vibranium and fueled by vengeance",
+    "state":{
+      "normal":"...",
+      "enraged":"Killmonger is enraged."
+    }
+  }
+  "c8_edward kenway":{
+    "name": "Edward Kenway",
+    "type": "Enemy",
+    "health": 300,
+    "attack": 70,
+    "defense": 70,
+    "evasion": 8,
+    "level": 8,
+    "inventory": ["i09_edwardskatana"],
+    "description": "A lethal assassin who wields a katana with agile expertise",
+    "state":{
+      "normal":"...",
+      "enraged":"Edward Kenway is enraged."
+    }
+    
+  }
+  "c9_maleficar":{
+    "name": "Maleficar",
+    "type": "Enemy",
+    "health": 350,
+    "attack": 85,
+    "defense": 70,
+    "evasion": 5,
+    "level": 10,
+    "inventory": [],
+    "description": "A sinister figure shrouded in shadows who wield forbidden spells",
+    "state":{
+      "normal":"...",
+      "enraged":"Maleficar is enraged."
+    }
+  }
+}

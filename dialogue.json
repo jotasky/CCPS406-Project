@@ -1,0 +1,22 @@
+{
+  "intro"{
+    "speech_01": "Genie: Greeting travler!",
+    "speech_02": "Genie: I am the Genie of Orion, and I will guide you through your journey. What is you name hero",
+    "speech_03": "Player: Steven, what is going on here!?"
+    "speech_04": "Genie: Thanos, the tyrant of Orion, has taken our Princess captive and holds her deep within his dungeon"
+    "speech_05": "Player: OH NO! How do I save her?"
+    "speech_06": "Genie: If you want save her, and you will need to defeat the enemies that are guarding her."
+    "speech_07": "Player: I will do my best to save her, but I will need your help. Where do I start?"
+    "speech_08": "Genie: You will need to start by exploring the dungeon. Take this torch; it will light you way."
+    "speek_09": "Player: Thank you"
+    "speech_10": "Genie: I must warn you, the dungeon is filled with very powerful enemies."
+    "speech_11": "Player: How many enemies are in the dungeon?"
+    "speech_12": "Genie: There are many enemies, one guarding almost every room in the dungeon. You will need to defeat them."
+    "speech_14": "Player: It will be very difficult I don't have weapons or armour."
+    "speech_15": "Genie: Not to worry. Thoughtout the dungeon, you'll find items to enhance your abilities. After you defeat the enemies you can take there weapons and armour to assist you on your journey. There are also chests in some of the rooms in the dungeon. You will also need to find the key that will set the princess free."
+    "speech_13": "Player: Do you know where they might be holding the princess?"
+    "speech_14": "Genie: I'm not exactly sure where but I know Thanos will be guarding her in the final room and he will most likely hold the key."
+    "speech_15": "Player: OK Got it. Let's start this journey." 
+    "speech_16": "Genie: Good luck and rememeber Steven, I will be with you, offering guidance and support along the way. The fate of the princess rests in your hands. Now let us begin."
+  }
+}  
