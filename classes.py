@@ -245,9 +245,8 @@ class Model:
     return None
 
 class Controller:
-  def __init__(self, model: Model, view: View):
+  def __init__(self, _):
     self.model = model
-    self.view = view
     self.parser = Parser
     # key and method pairs to handle user input commands
     
@@ -266,15 +265,15 @@ class Controller:
     }
     
   def start_game(self):
-    self.view.display_message("Welcome to the game!")
+    print("Welcome to the game!")
     current_room = self.model.get_player_position()
     room_description = self.model.get_room_description(current_room)
-    self.view.display_message("Good luck!")
-    self.view.display_room_description(room_description)
-    self.view.display_message("Type 'quit' or 'exit' to end the game.")
+    print("Good luck!")
+    print(room_description)
+    print("Type 'quit' or 'exit' to end the game.")
 
     while True:
-      command = self.view.get_user_input()
+      command = self.get_user_input()
       if command in ["exit", "quit"]:
         break
       self.handle_command(command)
@@ -284,18 +283,18 @@ class Controller:
     if action in self.commands:
       self.commands[action](target)
     else:
-      self.view.display_message("Invalid command. Please try again.")
+      print("Invalid command. Please try again.")
 
   def handle_look(self, _):
     current_room = self.model.get_player_position()
     room_description = self.model.get_room_description(current_room)
-    self.view.display_room_description(room_description)
+    print(room_description)
 
   def handle_go(self, direction: str):
     if direction:
       self.Character.moveTo(direction)
     else:
-      self.view.display_message("Please specify a direction.")
+      print("Please specify a direction.")
 
   def handle_attack(self, _):
     player = self.model.get_player()
@@ -303,7 +302,7 @@ class Controller:
     if target:
       self.model.attack(player, target)
     else:
-      self.view.display_message("There are no enemies in this room.")
+      print("There are no enemies in this room.")
     
 class Parser:
   def __init__(self, command: str):
