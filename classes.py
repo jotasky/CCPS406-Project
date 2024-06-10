@@ -75,11 +75,14 @@ class Character:
       print(self.locationObj.shortDesc)
 
   def attack(self, attacker, target):
-    damage = attacker.attack - target.defense
-    if damage > 0:
-      target.updateHealth(-damage)
-    print(f"{attacker.name} attacks {target.name} for {damage} damage!")
-    
+    if self.evasion >= 8 && self.evasion <=10:
+      damage = attacker.attack - target.defense
+      if damage > 0:
+        target.updateHealth(-damage)
+      print(f"{attacker.name} attacks {target.name} for {damage} damage!")
+    else:
+      print("No damage!")
+          
   def get_inventroy(self):
     return self.inventory
 
