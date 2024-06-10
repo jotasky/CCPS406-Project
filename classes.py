@@ -56,6 +56,11 @@ class Character:
     self.playable = allCharacters[ID]["playable"]
     self.locationObj = Room.registry[self.location] #initializing object location
 
+  def calcEvasion(self):
+    for item_id in self.inventory:
+      item = Item.registry[item_id]
+      self.evasion += item.evasion
+  
   def moveTo(self, direction):
     nextRoom = self.locationObj.adjRooms[direction]
     if nextRoom == "NULL":
