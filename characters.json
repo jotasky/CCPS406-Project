@@ -1,5 +1,5 @@
 { 
-  "c1_player"{
+  "c1_player":{
       "name": "Sven",
       "class": "Hero",
       "health": 100,
@@ -11,7 +11,7 @@
       "description": "The hero of Orion.",
       "curItem": "",
       "state":{
-        "normal": "..."
+        "normal": "...",
         "enraged": "Thanos is enraged."
       }
   }

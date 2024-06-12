@@ -6,8 +6,8 @@
     "damage": 10,
     "defense": 0,
     "evasion": 0,
-    "desc": "A torch, useful for lighting up rooms.",
-  }
+    "desc": "A torch, useful for lighting up rooms."
+  },
   
   "i02_smallhealthpot": {
     "name": "Small Health Potion",
@@ -16,7 +16,7 @@
     "damage": 0,
     "defense": 0,
     "evasion": 0,
-    "desc": "Using this regenerates your health by 25.","
+    "desc": "Using this regenerates your health by 25."
   }
 
   "i03_largehealthpot": {
