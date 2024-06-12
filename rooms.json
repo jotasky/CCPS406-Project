@@ -2,75 +2,65 @@
   "r01": {
     "name": "Cave Entrance",
     "adjRooms": {"N": "NULL", "E": "r02", "S": "NULL", "W": "NULL"},
-    "locked": "false",
+    "locked": {"E":  "UNLOCKED"},
     "visited": "false",
-    "items": ["i01_torch"],
-    "characters": ["c1_player"],
     "longDesc": "A torch lit room with an entrance to the East.",
-    "lookDesc": "You see a torch."
-    "shortDesc": "The cave entrance where you started.",
-  }
+    "lookDesc": "You see a torch.",
+    "shortDesc": "The cave entrance where you started."
+  },
     
   "r02": {
     "name": "Neymar's Netherfield",
     "adjRooms": {"N": "NULL", "E": "r03", "S": "NULL", "W":"r01"},
-    "locked": = "false",
+    "locked":  {"E":  "UNLOCKED", "W":  "UNLOCKED"},
     "visited": "false",
-    "items": []],
-    "characters" : ["c3_neymar"],
     "longDesc":"Imbued with space-time magic, an open green field appears inside a cave. Standing in the field, Neymar waits the hero. To the East is the entrance to the next room.",
     "lookDesc": "You see a rusty sword.",
-    "shortDesc": "A large lush field.",
-  }
+    "shortDesc": "A large lush field."
+  },
     
   "r03": {
     "name": "Thanos's Dungeon",
     "adjRooms": {"N": "NULL", "E": "r02", "S": "r04", "W": "NULL"},
-    "locked": "true",
+    "locked": {"E": "UNLOCKED", "S":  "LOCKED"},
     "visited": "false",
     "items": ["i05_ironchestplate"],
-    "characters": [],
     "longDesc": "An empty room with a rack holding some leather armour. There is a doorway to the South.",
-    "lookDesc": "You see a piece of leather armour hung on a rack."
-    "shortDesc": "An empty room...",
-    
-  }
+    "lookDesc": "You see a piece of leather armour hung on a rack.",
+    "shortDesc": "An empty room..."
+  },
+
   "r04": {
   "name": "Aang's Air Domain",
-  "adjRooms": {"N": "r03", "E": "NULL", "S": "r05", "W": "NULL"}
-  "locked": "false",
+  "adjRooms": {"N": "r03", "E": "NULL", "S": "r05", "W": "NULL"},
+  "locked": {"N":  "UNLOCKED", "S": "UNLOCKED"},
   "visited": "false",
-  "items": [],
-  "characters": ["c4_aang"],
   "longDesc": "A large ruin with numerous white pillars surrounding a central pillar where Aang stands. There is a doorway to the South.",
-  "lookDesc": "You see numerous white pillars."
-  "shortDesc": "The ruins of what seemed to be a temple...",
-  }
+  "lookDesc": "You see numerous white pillars.",
+  "shortDesc": "The ruins of what seemed to be a temple..."
+  },
 
   "r05": {
     "name": "Chambers of the Unknown",
-    "adjRooms": {"N": "r04", "E": "r07", "S": "r09", "W": "r06"}
-    "locked": "true",
+    "adjRooms": {"N": "r04", "E": "r06", "S": "NULL", "W": "r07"},
+    "locked": {"N": "UNLOCKED", "E": "LOCKED"},
     "visited": "false",
-    "items": ["i07_thorshammer"],
-    "characters": [],
-    "longDesc": "There does not seem to be any enemies here, but there is a chest placed in the middle of the room. 2 entrances on both the East and West side of the room, the East entrance seems to be blocked by some sort of magic...",
+    "longDesc": "There does not seem to be any enemies here, but there is a chest placed in the middle of the room. 2 exits on both the East and West side of the room",
     "lookDesc": "You see a chest.",
-    "shortDesc": "An open room with a chest and 2 doorways, one to the East, the other to the West.",
-    
-  }
+    "shortDesc": "An open room with a chest and 2 doorways, one to the East, the other to the West."
+  },
 
   "r06":{
     "name": "Kratos's Colosseum",
-    "adjRooms": {"N": "NULL", "E": "r05", "S": "NULL", "W": "NULL"}
-    "locked": "false",
+    "adjRooms": {"N": "NULL", "E": "r05", "S": "NULL", "W": "NULL"},
+    "locked": {"E": "UNLOCKED"},
     "visited": "false",
     "items": [],
     "characters": ["c5_kratos"],
     "longDesc": "A large colosseum ahead, Kratos awaits in arena.",
     "lookDesc": "You see Kratos, he is waiting for you.",
     "shortDesc": "An open room home to Kratos's colosseum."
-  }
+  },
 
   "r07":{
     "name": "The Forsaken Quarters",
