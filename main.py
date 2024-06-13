@@ -14,5 +14,8 @@ class Main:
         for character in new_classes.allCharacters:
             char_dict[character] = new_classes.Character(character)
 
+        # Testing the character's move_to function
+        char_dict["c1_player"].move_to()
+
 if __name__ == '__main__':
     main = Main()

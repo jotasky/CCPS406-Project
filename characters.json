@@ -13,7 +13,9 @@
       "state":{
         "normal": "...",
         "enraged": "Thanos is enraged."
-      }
+      },
+      "location": "r01",
+      "playable": "True"
   },
   
   "c2_thanos": {
@@ -29,7 +31,9 @@
     "state":{
       "normal": "...",
       "enraged": "Thanos is enraged."
-    }
+    },
+    "location": "r01",
+    "playable": "True"
   },
 
   "c3_neymar": {
@@ -45,7 +49,9 @@
     "state":{
       "normal":"...",
       "enraged":"Neymar is enraged."
-    }
+    },
+    "location": "r01",
+    "playable": "True"
   },
 
   "c4_aang": {

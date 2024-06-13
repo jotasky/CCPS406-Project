@@ -25,12 +25,27 @@ class Character:
         self.location = allCharacters[ID]["location"]
         self.playable = allCharacters[ID]["playable"]
         self.locationObj = Room.registry[self.location]
-
+    def interface(self, message):
+        print(message)
     def move_to(self, direction, room_dict):
-        # Check if room direction exists
-        if(room_dict[self.location].verify_move(direction)):
+        # Check if room direction exists and is UNLOCKED
+        room_status = room_dict[self.location].verify_move(direction)
+        if(room_status == "UNLOCKED"):
+            # Add character to the room they are moving to
+            room_dict[room_dict[self.location]["adjRooms"][direction]].char_add(self.ID)
+            # Delete character from the room they are moving from
+            room_dict[self.location].char_del(self.ID)
+            # Update character location variable
+            self.location = room_dict[self.location].room_direction(direction)
+            self.interface("Successfully moved to ", self.location)
 
-    def interface(self, action):
+        elif(room_status == "LOCKED"):
+            self.interface("Unforturnately room is locked. Currently residing in ", self.location)
+
+        else:
+            self.interface("Unfortunately that direction is inaccessible residing in ", self.location)
+
+
 
 
 
@@ -48,10 +63,10 @@ class Room:
 
     # Check whether room is accessible
     def verify_move(self, direction):
-        if(self.adjRooms[direction] == "UNLOCKED"):
-            return True
+        if(self.adjRooms[direction] != "NULL"):
+            return self.locked[direction]
         else:
-            return False
+            return "NULL"
 
     # Delete char from room
     def char_del(self, char_ID):
@@ -60,4 +75,9 @@ class Room:
 
     # Add char to a room
     def char_add(self, char_ID):
-        self.characters[char_ID]
+        self.characters[char_ID] = char_ID
+        allRooms[self.ID]["characters"][char_ID] = char_ID
+
+    # Returns the room ID pointed to by the direction
+    def room_direction(self, direction):
+        return self.adjRooms[direction]
