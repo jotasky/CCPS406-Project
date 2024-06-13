@@ -17,7 +17,7 @@
     "defense": 0,
     "evasion": 0,
     "desc": "Using this regenerates your health by 25."
-  }
+  },
 
   "i03_largehealthpot": {
     "name": "Large Health Potion",
@@ -27,7 +27,7 @@
     "defense": 0,
     "evasion": 0,
     "desc": "Using this regenerates your health by 50.","
-  }
+  },
     
   "i04_rustysword": {
     "name": "Rusty sword",
@@ -37,7 +37,7 @@
     "defense": 0,
     "evasion": 0,
     "desc": "A rusty old sword, left here by previous adventurers.",
-  }
+  },
 
   "i05_ironchestplate": {
     "name": "Iron Chestplate",
@@ -47,7 +47,7 @@
     "defense": 20,
     "evasion": 0,
     "desc": "Worn out leather armour.",
-  }
+  },
 
   "i06_neymarsshinpads":{
     "name": "Neymar's Shinpads",
@@ -57,7 +57,7 @@
     "defense": 10,
     "evasion": 3,
     "desc": "Shinpads worn by Neymar, they increases your chances of evading an attack.",
-  }
+  },
 
   "i07_thorshammer":{
     "name": "Thor's Hammer",
@@ -67,7 +67,7 @@
     "defense": 0,
     "evasion": 0,
     "desc": "A hammer imbued with the powers of the God of Lightning, Thor.",
-  }
+  },
     
   "i08_voidwyrmscalemail":{
     "name": "Voidwyrm Scalemail",
@@ -77,7 +77,7 @@
     "defense": 50,
     "evasion": 0,
     "desc": "Armour made from the scales of a Voidwyrm, a beast residing in the deep Void.",
-  }
+  },
     
   "i09_killmongersvambraces":{
     "name": "Killmonger's Vambraces",
@@ -87,7 +87,7 @@
     "defense": 15,
     "evasion": 5,
     "desc": "Killmonger's vambraces, they increases your chances of evading an attack.",
-  }
+  },
     
   "i10_edwardskatana": {
     "name": "Edward's Katana",
@@ -97,7 +97,7 @@
     "defense": 0,
     "evasion": 0,
     "desc": "A katana that was left by Edward Kenway, it is a powerful weapon.",
-  }
+  },
 
   "i11_cloakofevasion"{
     "name": "Cloak of Evasion",

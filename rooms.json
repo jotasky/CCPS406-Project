@@ -4,7 +4,7 @@
     "adjRooms": {"N": "NULL", "E": "r02", "S": "NULL", "W": "NULL"},
     "locked": {"E":  "UNLOCKED"},
     "visited": "false",
-    "items": ["i01_torch"],
+    "items": {"i01_torch": "i01_torch"},
     "characters": [],
     "longDesc": "A torch lit room with an entrance to the East.",
     "lookDesc": "You see a torch.",
@@ -17,7 +17,7 @@
     "locked":  {"E":  "UNLOCKED", "W":  "UNLOCKED"},
     "visited": "false",
     "items": [],
-    "characters": ["c3_neymar"],
+    "characters": {"c3_neymar": "c3_neymar" },
     "longDesc":"Imbued with space-time magic, an open green field appears inside a cave. Standing in the field, Neymar waits the hero. To the East is the entrance to the next room.",
     "lookDesc": "You see a rusty sword.",
     "shortDesc": "A large lush field."
@@ -28,7 +28,7 @@
     "adjRooms": {"N": "NULL", "E": "r02", "S": "r04", "W": "NULL"},
     "locked": {"E": "UNLOCKED", "S":  "LOCKED"},
     "visited": "false",
-    "items": ["i05_ironchestplate"],
+    "items": {"i05_ironchestplate": "i05_ironchestplate"},
     "characters": [],
     "longDesc": "An empty room with a rack holding some leather armour. There is a doorway to the South.",
     "lookDesc": "You see a piece of leather armour hung on a rack.",
@@ -41,7 +41,7 @@
     "locked": {"N":  "UNLOCKED", "S": "UNLOCKED"},
     "visited": "false",
     "items": [],
-    "characters": ["c4_aang"],
+    "characters": {"c4_aang": "c4_aang"},
     "longDesc": "A large ruin with numerous white pillars surrounding a central pillar where Aang stands. There is a doorway to the South.",
     "lookDesc": "You see numerous white pillars.",
     "shortDesc": "The ruins of what seemed to be a temple..."
@@ -52,7 +52,7 @@
     "adjRooms": {"N": "r04", "E": "r06", "S": "NULL", "W": "r07"},
     "locked": {"N": "UNLOCKED", "E": "LOCKED"},
     "visited": "false",
-    "items": ["i07_thorshammer"],
+    "items": {"i07_thorshammer":"i07_thorshammer"},
     "characters": [],
     "longDesc": "There does not seem to be any enemies here, but there is a chest placed in the middle of the room. 2 exits on both the East and West side of the room",
     "lookDesc": "You see a chest.",
@@ -65,7 +65,7 @@
     "locked": {"E": "UNLOCKED"},
     "visited": "false",
     "items": [],
-    "characters": ["c5_kratos"],
+    "characters": {"c5_kratos": "c5_kratos"},
     "longDesc": "A large colosseum ahead, Kratos awaits in arena.",
     "lookDesc": "You see Kratos, he is waiting for you.",
     "shortDesc": "An open room home to Kratos's colosseum."
@@ -85,7 +85,7 @@
 
   "r08":{
     "name": "Phoenix's Fiery",
-    "adjRooms": {"N": "r07", "E": "r09", "S": "NULL", "W": "NULL"}
+    "adjRooms": {"N": "r07", "E": "r09", "S": "NULL", "W": "NULL"},
     "locked": {"N": "UNLOCKED", "E": "UNLOCKED"},
     "visited": "false",
     "items": [],
@@ -93,11 +93,11 @@
     "longDesc": "A large platform surrounded by a lava lake, Rose awaits you. To the East, a doorway.",
     "lookDesc": "You see Rose.",
     "shortDesc": "A large platform surrounded by lava."
-  }
+  },
 
   "r09":{
     "name": "T's Throne",
-    "adjRooms": {"N": "NULL", "E": "r11", "S": "r10", "W": "r08"}
+    "adjRooms": {"N": "NULL", "E": "r11", "S": "r10", "W": "r08"},
     "locked": {"E": "UNLOCKED", "S": "UNLOCKED"},
     "visited": "false",
     "items": [],
@@ -109,7 +109,7 @@
 
   "r10":{
     "name": "Assassination Room",
-    "adjRooms": {"N": "r09", "E": "NULL", "S": "NULL", "W": "NULL"}
+    "adjRooms": {"N": "r09", "E": "NULL", "S": "NULL", "W": "NULL"},
     "locked": {"N": "UNLOCKED"},
     "visited": "false",
     "items": [],
@@ -121,7 +121,7 @@
 
   "r11":{
     "name": "The Dark Vault",
-    "adjRooms": {"N": "r12", "E": "NULL", "S": "NULL", "W": "r09"}
+    "adjRooms": {"N": "r12", "E": "NULL", "S": "NULL", "W": "r09"},
     "locked": {"N": "UNLOCKED", "E": "UNLOCKED"},
     "visited": "false",
     "items": [],

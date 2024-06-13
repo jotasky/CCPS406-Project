@@ -6,7 +6,7 @@
       "attack": 15,
       "defense": 15,
       "evasion": 3,
-      "level": 0
+      "level": 0,
       "inventory": [],
       "description": "The hero of Orion.",
       "curItem": "",
@@ -14,7 +14,7 @@
         "normal": "...",
         "enraged": "Thanos is enraged."
       }
-  }
+  },
   
   "c2_thanos": {
     "name": "Thanos",
@@ -27,10 +27,10 @@
     "inventory": ["i12_cagekey"],
     "description": "Extra-terrestrial trying to wipe out the population of Orion.",
     "state":{
-      "normal": "..."
+      "normal": "...",
       "enraged": "Thanos is enraged."
     }
-  }
+  },
 
   "c3_neymar": {
     "name": "Neymar",
@@ -39,14 +39,14 @@
     "attack": 5,
     "defense": 15,
     "evasion": 8,
-    "level": 1
+    "level": 1,
     "inventory": ["i02_smallhealthpot", "i06_neymarsshinpads"],
     "description": "A former footballer who uses his agility and precise footwork to         outmaneuver his opponents",
     "state":{
       "normal":"...",
       "enraged":"Neymar is enraged."
     }
-  }
+  },
 
   "c4_aang": {
     "name": "Aang",
@@ -76,10 +76,10 @@
     "description": "The son of Thanos, the god of destruction.",
     "state":{
       "normal":"...",
-      "enraged":"Kratos is enraged." //we would make this a way to interact thanos,
+      "enraged":"Kratos is enraged."
     }
     
-  }
+  },
 
   "c6_rose":{
     "name": "Rose",
@@ -95,7 +95,7 @@
       "normal":"...",
       "enraged":"Rose is enraged."
     }
-  }
+  },
 
   "c7_killmonger":{
     "name": "Killmonger",
@@ -111,7 +111,7 @@
       "normal":"...",
       "enraged":"Killmonger is enraged."
     }
-  }
+  },
   "c8_edward kenway":{
     "name": "Edward Kenway",
     "type": "Enemy",
@@ -127,7 +127,7 @@
       "enraged":"Edward Kenway is enraged."
     }
     
-  }
+  },
   "c9_maleficar":{
     "name": "Maleficar",
     "type": "Enemy",

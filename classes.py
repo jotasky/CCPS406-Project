@@ -8,8 +8,8 @@ CHAR_STATES = ["normal", "enraged"]
 with open("characters.json", "r") as file:
   allCharacters = json.load(file)
 
-with open("dialogue.json", "r") as file:
-  allDialogue = json.load(file)
+# with open("dialogue.json", "r") as file:
+#   allDialogue = json.load(file)
 
 with open("items.json", "r") as file:
   allItems = json.load(file)
@@ -17,8 +17,6 @@ with open("items.json", "r") as file:
 with open("rooms.json", "r") as file:
   allRooms = json.load(file)
 
-with open("turnCounter.json", "r") as file:
-  turnCounter_data = json.load(file) 
 
 
 # def equip(self, item: Item):
@@ -61,32 +59,25 @@ class Character:
       item = Item.registry[item_id]
       self.evasion += item.evasion
   
-  def moveTo(self, direction):
-    nextRoom = self.locationObj.adjRooms[direction]
-    if nextRoom == "NULL":
-      print("You cannot move that way.")
-      return
-    nextLocationObj = Room.registry[nextRoom]
-    self.locationObj.characters.remove(self.ID)
-    self.locationObj = nextLocationObj
-    self.location = nextRoom
-    self.locationObj.characters.append(self.ID)
-    print("You have entered: " + self.locationObj.name)
-
-    if not self.locationObj.visited:
-      print(self.locationObj.longDesc)
-      self.locationObj.playerVisited = True
+  # Upon game initialization, create a dictionary with all rooms (room_dict).
+  # The key will be the room number, and the value will be the room object.
+  def moveTo(self, direction, room_dict):
+    # Check if room in direction exists
+    if(room_dict[self.location].verify_move(direction)):
+      # Delete self from current room character dictionary
+      del room_dict[self.location].characters[self.ID]
+      # Add self to intended room character dictionary
+      room_dict[room_dict[self.location]["adjRooms"][direction]].character[self.ID] = self.ID
     else:
-      print(self.locationObj.shortDesc)
-
-  def attack(self, attacker, target):
-    if self.evasion >= 8 && self.evasion <=10:
-      damage = attacker.attack - target.defense
-      if damage > 0:
-        target.updateHealth(-damage)
-      print(f"{attacker.name} attacks {target.name} for {damage} damage!")
-    else:
-      print("No damage!")
+      print("Could not move")
+  # def attack(self, attacker, target):
+  #   if self.evasion >= 8 && self.evasion <=10:
+  #     damage = attacker.attack - target.defense
+  #     if damage > 0:
+  #       target.updateHealth(-damage)
+  #     print(f"{attacker.name} attacks {target.name} for {damage} damage!")
+  #   else:
+  #     print("No damage!")
           
   def get_inventroy(self):
     return self.inventory
@@ -186,6 +177,12 @@ class Room:
       self.longDesc = allRooms[ID]["longDesc"]
       self.shortDesc = allRooms[ID]["shortDesc"]
 
+    # Check whether room is accessible
+    def verify_move(self, direction):
+      if(self.adjRooms[direction] == "UNLOCKED"):
+        return True
+      else:
+        return False
     def connect_room(self, direction: str, room: 'Room'):
       self.adjRooms[direction] = room
 
@@ -204,14 +201,13 @@ class Room:
 class Model:
   def __init__(self,json_files: Dict[str, str]):
       self.json_files = json_files
-      self.turn_counter = turnCounter_data["turnCounter"]
       self.player = Character.registry["c1_player"]
       self.enemies = [Character.registry[char_id] 
                       for char_id in Character.registry if char_id != "c1_player"]
       self.rooms= Room.registry
       self.items = Item.registry
       self.characters = Character.registry
-      self.dialogue = allDialogue
+      # self.dialogue = allDialogue
       self.current_dialogue = self.dialogue["intro"]
       self.current_dialogue_index = 0
       self.current_dialogue_line = 0
@@ -228,12 +224,7 @@ class Model:
     for item_id in allItems:
       Item(item_id)
     for char_id in allCharacters:
-      Character(char_id)  
-
-  def save_data(self):
-    with open(self.json_files["turnCounter"], "w") as file:
-      json.dump(turnCounter_data, file, indent= 4)
-
+      Character(char_id)
 
   def get_player(self):
     return self.player
@@ -244,25 +235,25 @@ class Model:
         return enemy
     return None
 
-class Controller:
-  def __init__(self, _):
-    self.model = model
-    self.parser = Parser
-    # key and method pairs to handle user input commands
-    
-    player = Character("c1_player")
-    
-    self.commands = {
-      "look" : player.look,
-      "go": self.handle_go,
-      "attack": self.handle_attack,
-      "grab": self.handle_grab,
-      "inventory": self.handle_inventory,
-      "equip": self.handle_equip,
-      "enrage": self.handle_enrage,
-      "inspect": self.handle_inspect,
-      "move": self.handle_move,
-    }
+# class Controller:
+#   def __init__(self, _):
+#     self.model = model
+#     self.parser = Parser
+#     # key and method pairs to handle user input commands
+#
+#     player = Character("c1_player")
+#
+#     self.commands = {
+#       "look" : player.look,
+#       "go": self.handle_go,
+#       "attack": self.handle_attack,
+#       "grab": self.handle_grab,
+#       "inventory": self.handle_inventory,
+#       "equip": self.handle_equip,
+#       "enrage": self.handle_enrage,
+#       "inspect": self.handle_inspect,
+#       "move": self.handle_move,
+#     }
     
   def start_game(self):
     print("Welcome to the game!")
