@@ -38,6 +38,15 @@ class Character:
             self.location = room_dict[self.location].get_adj_room(direction)
             self.interface("Successfully moved to ", self.location)
 
+            # Check if room has been visited before, if yes play short descr if not play long description
+            if(room_dict[self.location].get_visited() == "false"):
+                print(room_dict[self.location].get_long_desc()) # Later do printing through interface. I do not like printing character class
+                room_dict[self.location].set_visited("true")    # Make all printing done from the get() functions. So it can be reused in the look() functionality
+            else:                                               # Issue with not printing first room location. Do it in the main function
+                print(room_dict[self.location].get_short_desc())
+
+
+
         elif(room_status == "LOCKED"):
             self.interface("Unforturnately room is locked. Currently residing in ", self.location)
 
@@ -78,4 +87,15 @@ class Room:
     # Returns the room ID pointed to by the direction
     def get_adj_room(self, direction):
         return self.adjRooms[direction]
+
+    def get_long_desc(self):
+        return self.longDesc
+    def get_short_desc(self):
+        return self.shortDesc
+
+    def get_visited(self):
+        return self.visited
+
+    def set_visited(self, value):
+        self.visited = value
 

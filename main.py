@@ -16,6 +16,8 @@ class Main:
 
         # Testing the character's move_to function
         char_dict["c1_player"].move_to("E", room_dict)
+        char_dict["c1_player"].move_to("E", room_dict)
+        char_dict["c1_player"].move_to("W", room_dict)
 
 if __name__ == '__main__':
     main = Main()
