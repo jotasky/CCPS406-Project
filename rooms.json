@@ -4,6 +4,8 @@
     "adjRooms": {"N": "NULL", "E": "r02", "S": "NULL", "W": "NULL"},
     "locked": {"E":  "UNLOCKED"},
     "visited": "false",
+    "items": ["i01_torch"],
+    "characters": [],
     "longDesc": "A torch lit room with an entrance to the East.",
     "lookDesc": "You see a torch.",
     "shortDesc": "The cave entrance where you started."
@@ -14,6 +16,8 @@
     "adjRooms": {"N": "NULL", "E": "r03", "S": "NULL", "W":"r01"},
     "locked":  {"E":  "UNLOCKED", "W":  "UNLOCKED"},
     "visited": "false",
+    "items": [],
+    "characters": ["c3_neymar"],
     "longDesc":"Imbued with space-time magic, an open green field appears inside a cave. Standing in the field, Neymar waits the hero. To the East is the entrance to the next room.",
     "lookDesc": "You see a rusty sword.",
     "shortDesc": "A large lush field."
@@ -25,19 +29,22 @@
     "locked": {"E": "UNLOCKED", "S":  "LOCKED"},
     "visited": "false",
     "items": ["i05_ironchestplate"],
+    "characters": [],
     "longDesc": "An empty room with a rack holding some leather armour. There is a doorway to the South.",
     "lookDesc": "You see a piece of leather armour hung on a rack.",
     "shortDesc": "An empty room..."
   },
 
   "r04": {
-  "name": "Aang's Air Domain",
-  "adjRooms": {"N": "r03", "E": "NULL", "S": "r05", "W": "NULL"},
-  "locked": {"N":  "UNLOCKED", "S": "UNLOCKED"},
-  "visited": "false",
-  "longDesc": "A large ruin with numerous white pillars surrounding a central pillar where Aang stands. There is a doorway to the South.",
-  "lookDesc": "You see numerous white pillars.",
-  "shortDesc": "The ruins of what seemed to be a temple..."
+    "name": "Aang's Air Domain",
+    "adjRooms": {"N": "r03", "E": "NULL", "S": "r05", "W": "NULL"},
+    "locked": {"N":  "UNLOCKED", "S": "UNLOCKED"},
+    "visited": "false",
+    "items": [],
+    "characters": ["c4_aang"],
+    "longDesc": "A large ruin with numerous white pillars surrounding a central pillar where Aang stands. There is a doorway to the South.",
+    "lookDesc": "You see numerous white pillars.",
+    "shortDesc": "The ruins of what seemed to be a temple..."
   },
 
   "r05": {
@@ -45,6 +52,8 @@
     "adjRooms": {"N": "r04", "E": "r06", "S": "NULL", "W": "r07"},
     "locked": {"N": "UNLOCKED", "E": "LOCKED"},
     "visited": "false",
+    "items": ["i07_thorshammer"],
+    "characters": [],
     "longDesc": "There does not seem to be any enemies here, but there is a chest placed in the middle of the room. 2 exits on both the East and West side of the room",
     "lookDesc": "You see a chest.",
     "shortDesc": "An open room with a chest and 2 doorways, one to the East, the other to the West."
@@ -64,20 +73,20 @@
 
   "r07":{
     "name": "The Forsaken Quarters",
-    "adjRooms": {"N": "NULL", "E": "r05", "S": "r08", "W": "NULL"}
-    "locked": "true",
+    "adjRooms": {"N": "NULL", "E": "r05", "S": "r08", "W": "NULL"},
+    "locked": {"E": "UNLOCKED", "S": "UNLOCKED"},
     "visited": "false",
     "items": ["i08_voidwyrmscalemail"],
     "characters": [],
     "longDesc": "There does not seem to be any enemies here, but there is a chest placed in the middle of the room. You see another entrance to the south.",
     "lookDesc": "You see a chest.",
     "shortDesc": "An empty room with a chest and a doorway to the south."
-  }
+  },
 
   "r08":{
     "name": "Phoenix's Fiery",
     "adjRooms": {"N": "r07", "E": "r09", "S": "NULL", "W": "NULL"}
-    "locked": "false",
+    "locked": {"N": "UNLOCKED", "E": "UNLOCKED"},
     "visited": "false",
     "items": [],
     "characters": ["c6_rose"],
@@ -89,55 +98,55 @@
   "r09":{
     "name": "T's Throne",
     "adjRooms": {"N": "NULL", "E": "r11", "S": "r10", "W": "r08"}
-    "locked": "true",
+    "locked": {"E": "UNLOCKED", "S": "UNLOCKED"},
     "visited": "false",
     "items": [],
     "characters": ["c7_killmonger"],
     "longDesc": "A dimly lit cave. Killmonger is sitting on his throne waiting for a challenger. There are two doorways, one to the South, the other to the West. ",
     "lookDesc": "You see Killmonger",
     "shortDesc": "A room with Killmonger's throne."
-  }
+  },
 
   "r10":{
     "name": "Assassination Room",
     "adjRooms": {"N": "r09", "E": "NULL", "S": "NULL", "W": "NULL"}
-    "locked": "true",
+    "locked": {"N": "UNLOCKED"},
     "visited": "false",
     "items": [],
-    "characters": ["c8_edward kenway""],
+    "characters": ["c8_edward kenway"],
     "longDesc": "A large hall filled with various obstacles blocking your vision, the room seems empty?",
     "lookDesc": "You see Edward Kenway lying in ambush behind a boulder",
-    "shortDesc": "A large hall filled with obstacles.",
-  }
+    "shortDesc": "A large hall filled with obstacles."
+  },
 
   "r11":{
     "name": "The Dark Vault",
-    "adjRooms": {"N": "r12", "E": "r10", "S": "NULL", "W": "NULL"}
-    "locked": "true",
+    "adjRooms": {"N": "r12", "E": "NULL", "S": "NULL", "W": "r09"}
+    "locked": {"N": "UNLOCKED", "E": "UNLOCKED"},
     "visited": "false",
     "items": [],
-    "characters": ["c9_maleficar""],
+    "characters": ["c9_maleficar"],
     "longDesc": "...",
     "lookDesc": "...",
-    "shortDesc": "...",
-    }
+    "shortDesc": "..."
+    },
 
   "r12":{
     "name": "Thanos's Hallway",
-    "adjRooms": {"N": "r13", "E": "NULL", "S": "r11", "W": "NULL"}
-    "locked": "true",
+    "adjRooms": {"N": "r13", "E": "NULL", "S": "r11", "W": "NULL"},
+    "locked": {"N": "B_LOCKED", "S": "UNLOCKED"},
     "visited": "false",
     "items": [],
     "characters": [],
     "longDesc": "A long hallway filled with the treasures Thanos has collected.",
     "lookDesc": "You see various treasures.",
-    "shortDesc": "A long hallway filled with treasures.",
-  }
+    "shortDesc": "A long hallway filled with treasures."
+  },
 
   "r13":{
     "name": "Thanos's Chamber",
-    "adjRooms": {"N": "NULL", "E": "NULL", "S": "r12", "W": "NULL"}
-    "locked": "true",
+    "adjRooms": {"N": "NULL", "E": "NULL", "S": "r12", "W": "NULL"},
+    "locked": {"S": "UNLOCKED"},
     "visited": "false",
     "items": [],
     "characters": ["c2_thanos"],
