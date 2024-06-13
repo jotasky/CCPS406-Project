@@ -13,7 +13,7 @@ class Character:
         self.name = allCharacters[ID]["name"]
         self.classType = allCharacters[ID]["class"]
         self.health = allCharacters[ID]["health"]
-        self.maxhealth = allCharacters[ID]["maxHealth"]
+        self.maxhealth = allCharacters[ID]["health"]
         self.attack = allCharacters[ID]["attack"]
         self.defense = allCharacters[ID]["defense"]
         self.evasion = allCharacters[ID]["evasion"]
@@ -24,19 +24,18 @@ class Character:
         self.state = allCharacters[ID]["state"]
         self.location = allCharacters[ID]["location"]
         self.playable = allCharacters[ID]["playable"]
-        self.locationObj = Room.registry[self.location]
-    def interface(self, message):
-        print(message)
+    def interface(self, message, location):
+        print(message, location)
     def move_to(self, direction, room_dict):
         # Check if room direction exists and is UNLOCKED
         room_status = room_dict[self.location].verify_move(direction)
         if(room_status == "UNLOCKED"):
             # Add character to the room they are moving to
-            room_dict[room_dict[self.location]["adjRooms"][direction]].char_add(self.ID)
+            room_dict[room_dict[self.location].get_adj_room(direction)].char_add(self.ID)
             # Delete character from the room they are moving from
             room_dict[self.location].char_del(self.ID)
             # Update character location variable
-            self.location = room_dict[self.location].room_direction(direction)
+            self.location = room_dict[self.location].get_adj_room(direction)
             self.interface("Successfully moved to ", self.location)
 
         elif(room_status == "LOCKED"):
@@ -71,13 +70,12 @@ class Room:
     # Delete char from room
     def char_del(self, char_ID):
         del self.characters[char_ID]
-        del allRooms[self.ID]["characters"][char_ID]
 
     # Add char to a room
     def char_add(self, char_ID):
         self.characters[char_ID] = char_ID
-        allRooms[self.ID]["characters"][char_ID] = char_ID
 
     # Returns the room ID pointed to by the direction
-    def room_direction(self, direction):
+    def get_adj_room(self, direction):
         return self.adjRooms[direction]
+

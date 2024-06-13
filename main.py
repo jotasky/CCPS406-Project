@@ -15,7 +15,7 @@ class Main:
             char_dict[character] = new_classes.Character(character)
 
         # Testing the character's move_to function
-        char_dict["c1_player"].move_to()
+        char_dict["c1_player"].move_to("E", room_dict)
 
 if __name__ == '__main__':
     main = Main()

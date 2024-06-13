@@ -5,7 +5,7 @@
     "locked": {"E":  "UNLOCKED"},
     "visited": "false",
     "items": {"i01_torch": "i01_torch"},
-    "characters": ["c1_player"],
+    "characters": {"c1_player": "c1_player"},
     "longDesc": "A torch lit room with an entrance to the East.",
     "lookDesc": "You see a torch.",
     "shortDesc": "The cave entrance where you started."
