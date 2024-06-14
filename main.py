@@ -14,6 +14,10 @@ class Main:
         for character in new_classes.allCharacters:
             char_dict[character] = new_classes.Character(character)
 
+        # Loop through and create the item dictionary
+        for item in new_classes.allItems:
+            item_dict[item] = new_classes.Item(item)
+
         # Testing the character's move_to function
         char_dict["c1_player"].move_to("E", room_dict)
         char_dict["c1_player"].move_to("E", room_dict)

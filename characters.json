@@ -12,7 +12,7 @@
       "curItem": "",
       "state":{
         "normal": "...",
-        "enraged": "Thanos is enraged."
+        "enraged": "Sven is enraged."
       },
       "location": "r01",
       "playable": "True"
@@ -33,8 +33,8 @@
       "normal": "...",
       "enraged": "Thanos is enraged."
     },
-    "location": "r01",
-    "playable": "True"
+    "location": "r13",
+    "playable": "False"
   },
 
   "c3_neymar": {
@@ -52,8 +52,8 @@
       "normal":"...",
       "enraged":"Neymar is enraged."
     },
-    "location": "r01",
-    "playable": "True"
+    "location": "r02",
+    "playable": "False"
   },
 
   "c4_aang": {
@@ -71,8 +71,8 @@
       "normal":"...",
       "enraged":"Aang is enraged."
     },
-    "location": "r01",
-    "playable": "True"
+    "location": "r04",
+    "playable": "False"
   },
 
   "c5_kratos":{
@@ -83,15 +83,15 @@
     "defense": 30,
     "evasion": 5,
     "level": 4,
-    "inventory": ["i02_smallhealthpot"],
+    "inventory": ["i02_smallhealthpot", "i13_bosskey"],
     "description": "The son of Thanos, the god of destruction.",
     "curItem": "",
     "state":{
       "normal":"...",
       "enraged":"Kratos is enraged."
     },
-    "location": "r01",
-    "playable": "True"
+    "location": "r06",
+    "playable": "False"
   },
 
   "c6_rose":{
@@ -109,8 +109,8 @@
       "normal":"...",
       "enraged":"Rose is enraged."
     },
-    "location": "r01",
-    "playable": "True"
+    "location": "r08",
+    "playable": "False"
   },
 
   "c7_killmonger":{
@@ -128,8 +128,8 @@
       "normal":"...",
       "enraged":"Killmonger is enraged."
     },
-    "location": "r01",
-    "playable": "True"
+    "location": "r09",
+    "playable": "False"
   },
   "c8_edward kenway":{
     "name": "Edward Kenway",
@@ -146,8 +146,8 @@
       "normal":"...",
       "enraged":"Edward Kenway is enraged."
     },
-    "location": "r01",
-    "playable": "True"
+    "location": "r10",
+    "playable": "False"
   },
   "c9_maleficar":{
     "name": "Maleficar",
@@ -164,7 +164,7 @@
       "normal":"...",
       "enraged":"Maleficar is enraged."
     },
-    "location": "r01",
-    "playable": "True"
+    "location": "r11",
+    "playable": "False"
   }
 }

@@ -16,7 +16,7 @@
     "adjRooms": {"N": "NULL", "E": "r03", "S": "NULL", "W":"r01"},
     "locked":  {"E":  "UNLOCKED", "W":  "UNLOCKED"},
     "visited": "false",
-    "items": {},
+    "items": {"i04_rustysword": "i04_rustysword"},
     "characters": {"c3_neymar": "c3_neymar" },
     "longDesc":"Imbued with space-time magic, an open green field appears inside a cave. Standing in the field, Neymar waits the hero. To the East is the entrance to the next room.",
     "lookDesc": "You see a rusty sword.",

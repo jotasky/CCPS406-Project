@@ -2,10 +2,13 @@ import json
 from typing import Dict
 
 with open("characters.json", "r") as file:
-  allCharacters = json.load(file)
+    allCharacters = json.load(file)
 
 with open("rooms.json", "r") as file:
-  allRooms = json.load(file)
+    allRooms = json.load(file)
+
+with open("items.json", "r") as file:
+    allItems = json.load(file)
 
 class Character:
     def __init__(self, ID):
@@ -98,4 +101,16 @@ class Room:
 
     def set_visited(self, value):
         self.visited = value
+
+class Item:
+    def __init__(self, ID):
+        self.ID = ID
+        self.name = allItems[ID]["name"]
+        self.type = allItems[ID]["type"]
+        self.health = allItems[ID]["health"]
+        self.damage = allItems[ID]["damage"]
+        self.evasion = allItems[ID]["evasion"]
+        self.desc = allItems[ID]["desc"]
+
+
 
