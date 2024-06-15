@@ -1,22 +1,36 @@
 {
-  "intro"{
-    "speech_01": "Genie: Greeting travler!",
-    "speech_02": "Genie: I am the Genie of Orion, and I will guide you through your journey. What is you name hero",
-    "speech_03": "Player: Steven, what is going on here!?"
-    "speech_04": "Genie: Thanos, the tyrant of Orion, has taken our Princess captive and holds her deep within his dungeon"
-    "speech_05": "Player: OH NO! How do I save her?"
-    "speech_06": "Genie: If you want save her, and you will need to defeat the enemies that are guarding her."
-    "speech_07": "Player: I will do my best to save her, but I will need your help. Where do I start?"
-    "speech_08": "Genie: You will need to start by exploring the dungeon. Take this torch; it will light you way."
-    "speek_09": "Player: Thank you"
-    "speech_10": "Genie: I must warn you, the dungeon is filled with very powerful enemies."
-    "speech_11": "Player: How many enemies are in the dungeon?"
-    "speech_12": "Genie: There are many enemies, one guarding almost every room in the dungeon. You will need to defeat them."
-    "speech_14": "Player: It will be very difficult I don't have weapons or armour."
-    "speech_15": "Genie: Not to worry. Thoughtout the dungeon, you'll find items to enhance your abilities. After you defeat the enemies you can take there weapons and armour to assist you on your journey. There are also chests in some of the rooms in the dungeon. You will also need to find the key that will set the princess free."
-    "speech_13": "Player: Do you know where they might be holding the princess?"
-    "speech_14": "Genie: I'm not exactly sure where but I know Thanos will be guarding her in the final room and he will most likely hold the key."
-    "speech_15": "Player: OK Got it. Let's start this journey." 
-    "speech_16": "Genie: Good luck and rememeber Steven, I will be with you, offering guidance and support along the way. The fate of the princess rests in your hands. Now let us begin."
-  }
-}  
+  "intro": [
+    "'Greeting traveler!' the Genie says.",
+    "'I am the Genie of Orion, and I will guide you through your journey. What is your name, hero?'",
+    "'Sven, what is going on here!?' the player responds.",
+    "'Thanos, the tyrant of Orion, has taken our Princess captive and holds her deep within his dungeon,' the Genie explains.",
+    "'OH NO! How do I save her?' the player asks.",
+    "'If you want to save her, you will need to defeat the enemies that are guarding her,' the Genie replies.",
+    "'I will do my best to save her, but I will need your help. Where do I start?' the player inquires.",
+    "'You will need to start by exploring the dungeon. Take this torch; it will light your way,' the Genie advises.",
+    "'Thank you,' says the player.",
+    "'I must warn you, the dungeon is filled with very powerful enemies,' the Genie cautions.",
+    "'How many enemies are in the dungeon?' the player asks.",
+    "'There are many enemies, one guarding almost every room in the dungeon. You will need to defeat them,' the Genie answers.",
+    "'It will be very difficult. I don't have weapons or armor,' the player worries.",
+    "'Not to worry. Throughout the dungeon, you'll find items to enhance your abilities. After you defeat the enemies, you can take their weapons and armor to assist you on your journey. There are also chests in some of the rooms in the dungeon. You will also need to find the key that will set the princess free,' the Genie explains.",
+    "'Do you know where they might be holding the princess?' the player asks.",
+    "'I'm not exactly sure where, but I know Thanos will be guarding her in the final room and he will most likely hold the key,' the Genie replies.",
+    "'OK, got it. Let's start this journey,' the player declares.",
+    "'Try to Look around, grab any items on the floor, and equip weapons. At any time say 'inspect' to see your stats.",
+    "'When you are ready, move in cardinal directions to explore the dungeon.'",
+    "'Good luck and remember, Sven, I will be with you, offering guidance and support along the way. The fate of the princess rests in your hands. Now let us begin,' the Genie says."
+  ],
+  "final boss":[
+    "---------------------------------",
+    "All roads lead to me. Says Thanos",
+    "---------------------------------"
+  ],
+  
+  "outro_win":[
+    "You freed the Princess!"
+  ],
+  "outro_lose":[
+    "You Lose"
+  ]
+}

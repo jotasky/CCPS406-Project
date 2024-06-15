@@ -4,29 +4,32 @@
       "class": "Hero",
       "health": 100,
       "attack": 15,
-      "defense": 15,
+      "defense": 10,
       "evasion": 3,
       "level": 0,
       "inventory": [],
       "description": "The hero of Orion.",
       "curItem": "",
-      "state":{
+      "state": {
         "normal": "...",
-        "enraged": "Sven is enraged."
+        "enraged": "..."
       },
       "location": "r01",
-      "playable": "True"
+      "playable": "True",
+      "aggro": {},
+      "recent_move": "",
+      "dead": "False"
   },
   
   "c2_thanos": {
     "name": "Thanos",
     "class": "Enemy",
-    "health": 500,
-    "attack": 100,
-    "defense": 100,
+    "health": 350,
+    "attack": 110,
+    "defense": 45,
     "evasion": 15,
     "level": 15,
-    "inventory": ["i12_cagekey"],
+    "inventory": [],
     "description": "Extra-terrestrial trying to wipe out the population of Orion.",
     "curItem": "",
     "state":{
@@ -34,34 +37,40 @@
       "enraged": "Thanos is enraged."
     },
     "location": "r13",
-    "playable": "False"
+    "playable": "False",
+    "aggro": {},
+    "recent_move": "",
+    "dead": "False"
   },
 
   "c3_neymar": {
     "name": "Neymar",
     "class": "Enemy",
     "health": 50,
-    "attack": 5,
+    "attack": 18,
     "defense": 15,
     "evasion": 8,
     "level": 1,
-    "inventory": ["i02_smallhealthpot", "i06_neymarsshinpads"],
-    "description": "A former footballer who uses his agility and precise footwork to         outmaneuver his opponents",
+    "inventory": ["i02_smallhealthpot", "i06_neymarsshinpads", "i12_key"],
+    "description": "A former footballer who uses his agility and precise footwork to outmaneuver his opponents",
     "curItem": "",
     "state":{
       "normal":"...",
       "enraged":"Neymar is enraged."
     },
     "location": "r02",
-    "playable": "False"
+    "playable": "False",
+    "aggro": {},
+    "recent_move": "",
+    "dead": "False"
   },
 
   "c4_aang": {
     "name": "Aang",
     "class": "Enemy",
     "health": 70,
-    "attack": 12,
-    "defense": 20,
+    "attack": 30,
+    "defense": 30,
     "evasion": 5,
     "level": 2,
     "inventory": ["i02_smallhealthpot"],
@@ -72,18 +81,21 @@
       "enraged":"Aang is enraged."
     },
     "location": "r04",
-    "playable": "False"
+    "playable": "False",
+    "aggro": {},
+    "recent_move": "",
+    "dead": "False"
   },
 
   "c5_kratos":{
     "name": "Kratos",
     "class": "Enemy",
-    "health": 150,
-    "attack": 25,
+    "health": 275,
+    "attack": 100,
     "defense": 30,
     "evasion": 5,
     "level": 4,
-    "inventory": ["i02_smallhealthpot", "i13_bosskey"],
+    "inventory": ["i03_largehealthpot", "i13_bosskey"],
     "description": "The son of Thanos, the god of destruction.",
     "curItem": "",
     "state":{
@@ -91,18 +103,21 @@
       "enraged":"Kratos is enraged."
     },
     "location": "r06",
-    "playable": "False"
+    "playable": "False",
+    "aggro": {},
+    "recent_move": "",
+    "dead": "False"
   },
 
   "c6_rose":{
     "name": "Rose",
     "class": "Enemy",
     "health": 170,
-    "attack": 35,
-    "defense": 40, 
+    "attack": 70,
+    "defense": 21, 
     "evasion": 5,
     "level": 6,
-    "inventory": [],
+    "inventory": ["i03_largehealthpot"],
     "description": "A wise woman who has been cursed by Thanos.",
     "curItem": "",
     "state":{
@@ -110,18 +125,21 @@
       "enraged":"Rose is enraged."
     },
     "location": "r08",
-    "playable": "False"
+    "playable": "False",
+    "aggro": {},
+    "recent_move": "",
+    "dead": "False"
   },
 
   "c7_killmonger":{
     "name": "Killmonger",
     "class": "Enemy",
-    "health": 250,
-    "attack": 50,
-    "defense": 50,
+    "health": 200,
+    "attack": 100,
+    "defense": 28,
     "evasion": 10,
     "level": 7,
-    "inventory": ["i08_killmongersvambraces"],
+    "inventory": ["i09_killmongersvambraces", "i03_largehealthpot"],
     "description": "Clad in vibranium and fueled by vengeance",
     "curItem": "",
     "state":{
@@ -129,17 +147,20 @@
       "enraged":"Killmonger is enraged."
     },
     "location": "r09",
-    "playable": "False"
+    "playable": "False",
+    "aggro": {},
+    "recent_move": "",
+    "dead": "False"
   },
   "c8_edward kenway":{
     "name": "Edward Kenway",
     "class": "Enemy",
-    "health": 300,
-    "attack": 70,
-    "defense": 70,
+    "health": 220,
+    "attack": 100,
+    "defense": 33,
     "evasion": 8,
     "level": 8,
-    "inventory": ["i09_edwardskatana"],
+    "inventory": ["i10_edwardskatana", "i12_key"],
     "description": "A lethal assassin who wields a katana with agile expertise",
     "curItem": "",
     "state":{
@@ -147,17 +168,20 @@
       "enraged":"Edward Kenway is enraged."
     },
     "location": "r10",
-    "playable": "False"
+    "playable": "False",
+    "aggro": {},
+    "recent_move": "",
+    "dead": "False"
   },
   "c9_maleficar":{
     "name": "Maleficar",
     "class": "Enemy",
-    "health": 350,
-    "attack": 85,
-    "defense": 70,
+    "health": 250,
+    "attack": 100,
+    "defense": 33,
     "evasion": 5,
     "level": 10,
-    "inventory": [],
+    "inventory": ["i03_largehealthpot"],
     "description": "A sinister figure shrouded in shadows who wield forbidden spells",
     "curItem": "",
     "state":{
@@ -165,6 +189,9 @@
       "enraged":"Maleficar is enraged."
     },
     "location": "r11",
-    "playable": "False"
+    "playable": "False",
+    "aggro": {},
+    "recent_move": "",
+    "dead": "False"
   }
 }
